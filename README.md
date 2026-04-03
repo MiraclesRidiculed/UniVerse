@@ -1,32 +1,84 @@
 # UniVerse
-<<<<<<< HEAD
-Campus networking app with Auth0 sign-in, student profiles, search, and resource sharing. Next.js + Express + MongoDB monorepo.
-=======
 
-UniVerse is a campus networking product organized as a single npm workspace monorepo. The codebase combines the original client and core services into one publish-ready repository while keeping the frontend and backend clearly separated.
+UniVerse is a campus networking platform that enables students to connect, discover peers, and share resources within their campus ecosystem.
 
-## Workspace Layout
+It is built as a **monorepo** using modern full-stack technologies, combining a scalable backend with a responsive frontend.
 
-- `apps/client`: Next.js frontend with Auth0-based sign-in and campus-facing UI.
-- `apps/core`: Express + MongoDB backend for student, admin, and campus data flows.
+---
 
-## Getting Started
+## 🚀 Tech Stack
 
-1. Install dependencies from the repository root with `npm install`.
-2. Create environment files from the examples in `apps/client/.env.example` and `apps/core/.env.example`.
-3. Start the backend with `npm run dev:core`.
-4. Start the frontend with `npm run dev:client`.
+* **Frontend:** Next.js (Auth0 authentication)
+* **Backend:** Express.js
+* **Database:** MongoDB
+* **Architecture:** npm workspace monorepo
 
-## Common Commands
+---
 
-- `npm run dev:client`
-- `npm run dev:core`
-- `npm run build`
-- `npm run typecheck`
-- `npm run format`
+## 📁 Workspace Layout
 
-## Collaboration Notes
+* `apps/client`
+  Next.js frontend with Auth0-based sign-in and campus-facing UI.
 
-- The frontend and backend still deploy independently, but they now share one repository, one lockfile, and one set of setup docs.
-- This repository is licensed under MIT. Before publishing it publicly, make sure every contributor to the original code agrees to the MIT release.
->>>>>>> 5f9ed77 (Create UniVerse monorepo)
+* `apps/core`
+  Express + MongoDB backend handling student, admin, and campus data flows.
+
+---
+
+## ⚙️ Getting Started
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Setup environment variables:
+
+   * Copy `.env.example` files in:
+
+     * `apps/client`
+     * `apps/core`
+
+3. Run backend:
+
+   ```bash
+   npm run dev:core
+   ```
+
+4. Run frontend:
+
+   ```bash
+   npm run dev:client
+   ```
+
+---
+
+## 🧰 Common Commands
+
+* `npm run dev:client` → Start frontend
+* `npm run dev:core` → Start backend
+* `npm run build` → Build all apps
+* `npm run typecheck` → Type checking
+* `npm run format` → Code formatting
+
+---
+
+## 🤝 Collaboration Notes
+
+* Frontend and backend are developed in a unified monorepo but can be deployed independently.
+* Shared dependencies and a single lockfile simplify development.
+* Licensed under MIT — ensure all contributors approve before public release.
+
+---
+
+## 🎯 Vision
+
+UniVerse aims to become a **central digital hub for campus life**, enabling:
+
+* Student discovery & networking
+* Resource sharing
+* Campus-specific communities
+* Admin-student interaction
+
+---
